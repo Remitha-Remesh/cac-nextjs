@@ -1,73 +1,96 @@
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
+import Scroll from "@/components/scroll";
 export default function Faq() {
     return (
  <div>
 
-<div class="container  py-3">
+  <Navbar/>
 
 
-<div class="accordion accordion-faq  " id="faqAccordion">
+  <section
+      className="hero-section vh-100 d-flex align-items-center position-relative overflow-hidden text-white"
+    >
+      <div className="container d-flex flex-column custom-gap text-start">
+        <div className="row">
+          <div className="col-12 text-center text-md-end">
+            <h1 className="display-4 fw-normal text-white hero-text">
+              INDIA’S FIRST & LARGEST<br />ONLINE CARDAMOM AUCTION<br />TRADING
+              PLATFORM.
+            </h1>
+          </div>
+        </div>
+        </div>
+        
+    </section>
+    <Scroll/>
 
-<div class="accordion-item ">
-    <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+<div className="container  py-3">
+
+
+<div className="accordion accordion-faq  " id="faqAccordion">
+
+<div className="accordion-item ">
+    <h2 className="accordion-header" id="headingOne">
+        <button className="accordion-button bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             What is the objective of the company?
         </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-        <div class="accordion-body  bg-dark text-white">
+    <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+        <div className="accordion-body  bg-dark text-white">
             Our objective is to “Organize Information About the ‘Value’ And ‘Market’ Of Green Cardamom produced in India and make it accessible to everyone.”
         </div>
     </div>
 </div>
 
 
-<div class="accordion-item bg-light">
-    <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+<div className="accordion-item bg-light">
+    <h2 className="accordion-header" id="headingTwo">
+        <button className="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             What is profile mapping?
         </button>
     </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
+    <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+        <div className="accordion-body text-white">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet a voluptatibus inventore cupiditate fugiat modi facere explicabo fugit eius suscipit!
         </div>
     </div> 
 </div> 
 
-<div class="accordion-item bg-light">
-    <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+<div className="accordion-item bg-light">
+    <h2 className="accordion-header" id="headingThree">
+        <button className="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           What are the informations that we get from profile mapping?
         </button>
     </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
+    <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+        <div className="accordion-body text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, quibusdam repudiandae? Eos vitae vero aperiam dolorem exercitationem! Sed facilis corrupti, labore quam nobis fugit, vel, dolor delectus optio doloremque nemo!
         </div>
   </div>
 </div>
 
-<div class="accordion-item bg-light">
-    <h2 class="accordion-header" id="headingFour">
-        <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+<div className="accordion-item bg-light">
+    <h2 className="accordion-header" id="headingFour">
+        <button className="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
           How to buy and sell?
         </button>
     </h2>
-    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
+    <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+        <div className="accordion-body text-white">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, molestias ab maiores ipsum libero enim odit tempora necessitatibus veritatis? Illum.
         </div>
     </div>
 </div>
 
-<div class="accordion-item bg-light">
-    <h2 class="accordion-header" id="headingFive">
-        <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+<div className="accordion-item bg-light">
+    <h2 className="accordion-header" id="headingFive">
+        <button className="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
           How to use the App?
         </button>
     </h2>
-    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-dark">
+    <div id="collapseFive" className="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+        <div className="accordion-body text-dark">
           <iframe
           width="90%" 
           height="600" 
@@ -89,33 +112,33 @@ export default function Faq() {
     </div>
 </div>
 
-<div class="accordion-item bg-light">
-    <h2 class="accordion-header" id="headingSix">
-        <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+<div className="accordion-item bg-light">
+    <h2 className="accordion-header" id="headingSix">
+        <button className="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
           How to read and understand data in mobile application?
         </button>
     </h2>
-    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
+    <div id="collapseSix" className="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+        <div className="accordion-body text-white">
            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint blanditiis facilis provident impedit repudiandae quo cum optio mollitia eaque vero.
         </div>
     </div>
 </div>
 
-<div class="accordion-item bg-light">
-    <h2 class="accordion-header" id="headingSeven">
-        <button class="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+<div className="accordion-item bg-light">
+    <h2 className="accordion-header" id="headingSeven">
+        <button className="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
           
           What are Cardamom Auction.com Services?
         </button>
     </h2>
-    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
-        <div class="accordion-body text-white">
+    <div id="collapseSeven" className="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+        <div className="accordion-body text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus mollitia alias facere rerum molestias possimus qui est corrupti. Dolore debitis veritatis eligendi dicta assumenda! Accusantium!
         </div>
     </div>
 </div>
-<div class="accordion-item bg-light">
+<div className="accordion-item bg-light">
     <h2 className="accordion-header" id="headingEight">
         <button className="accordion-button collapsed bg-light text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
           What are the documents needed to be a buyer in Cardamom Auction.com?
@@ -166,53 +189,53 @@ export default function Faq() {
 
 </div>
 
-<div class="row g-3 grid-faq mt-3 g-md-4 pb-md-5">
-    <div class="col-12 col-md-6">
-      <div class="grid-item square">
-        <div class="content">
-          <h1 class="mt-md-3 big-square-head">What is the objective of the company?</h1>
-          <p class="big-square-p">
+<div className="row g-3 grid-faq mt-3 g-md-4 pb-md-5">
+    <div className="col-12 col-md-6">
+      <div className="grid-item square">
+        <div className="content">
+          <h1 className="mt-md-3 big-square-head">What is the objective of the company?</h1>
+          <p className="big-square-p">
             Our objective is into “Organizing Information About the ‘Value’ And ‘Market’ Of Green Cardamom produced in India and making it accessible to everyone”.
           </p>
-          <button class="read-more" id="readMoreBtn">Read more</button>
+          <button className="read-more" id="readMoreBtn">Read more</button>
         </div>
       </div>
     </div>
 
-    <div class="col-12 col-md-6">
-      <div class="row g-3 g-md-4">
-        <div class="col-6">
-          <div class="grid-item square">
-            <div class="content">
-              <h3 class="small-square-profile text-start">What is <br />profile <br />mapping?</h3>
-             <i class="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
+    <div className="col-12 col-md-6">
+      <div className="row g-3 g-md-4">
+        <div className="col-6">
+          <div className="grid-item square">
+            <div className="content">
+              <h3 className="small-square-profile text-start">What is <br />profile <br />mapping?</h3>
+             <i className="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
             </
             div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="grid-item square">
-            <div class="content">
-              <h4 class="text-start small-square-profile2">What are the<br />informations<br />that we get<br />from profile<br />mapping?</h4>
-             <i class="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
+        <div className="col-6">
+          <div className="grid-item square">
+            <div className="content">
+              <h4 className="text-start small-square-profile2">What are the<br />informations<br />that we get<br />from profile<br />mapping?</h4>
+             <i className="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
             </div>
 
           </div>
         </div>
-        <div class="col-6">
-          <div class="grid-item square">
-            <div class="content">
-              <h3 class="small-square-buy text-start">How to <br />buy and sell?</h3>
-             <i class="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
+        <div className="col-6">
+          <div className="grid-item square">
+            <div className="content">
+              <h3 className="small-square-buy text-start">How to <br />buy and sell?</h3>
+             <i className="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
             </div>
 
           </div>
         </div>
-        <div class="col-6">
-          <div class="grid-item square">
-            <div class="content">
-              <h3 class="small-square-sell text-start">How to<br />Use the App?</h3>
-             <i class="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
+        <div className="col-6">
+          <div className="grid-item square">
+            <div className="content">
+              <h3 className="small-square-sell text-start">How to<br />Use the App?</h3>
+             <i className="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
             </div>
 
           </div>
@@ -220,56 +243,56 @@ export default function Faq() {
       </div>
     </div>
 
-    <div class="col-12 col-md-4">
-      <div class="grid-item square">
-        <div class="content">
-          <h3 class="text-start large-square1">How to read <br />and understand <br />data in mobile <br />application?</h3>
-         <i class="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
+    <div className="col-12 col-md-4">
+      <div className="grid-item square">
+        <div className="content">
+          <h3 className="text-start large-square1">How to read <br />and understand <br />data in mobile <br />application?</h3>
+         <i className="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
         </div>
 
       </div>
     </div>
-    <div class="col-12 col-md-4">
-      <div class="grid-item square">
-        <div class="content">
-          <h3 class="text-start large-square2">What are Cardamom <br />Auction.com <br />Services?</h3>
-         <i class="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
+    <div className="col-12 col-md-4">
+      <div className="grid-item square">
+        <div className="content">
+          <h3 className="text-start large-square2">What are Cardamom <br />Auction.com <br />Services?</h3>
+         <i className="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
         </div>
 
       </div>
     </div>
-    <div class="col-12 col-md-4">
-      <div class="grid-item square">
-        <div class="content">
-          <h3 class="text-start large-square3">What are<br />Cardamom Auction.com <br />Unique Features?</h3>
-         <i class="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
+    <div className="col-12 col-md-4">
+      <div className="grid-item square">
+        <div className="content">
+          <h3 className="text-start large-square3">What are<br />Cardamom Auction.com <br />Unique Features?</h3>
+         <i className="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
         </div>
 
       </div>
     </div>
-    <div class="col-12 col-md-4">
-      <div class="grid-item square">
-        <div class="content">
-          <h3 class="text-start large-square4">What about <br />Cardamom<br />Auction.com <br />Team?</h3>
-         <i class="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
+    <div className="col-12 col-md-4">
+      <div className="grid-item square">
+        <div className="content">
+          <h3 className="text-start large-square4">What about <br />Cardamom<br />Auction.com <br />Team?</h3>
+         <i className="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
         </div>
 
       </div>
     </div>
-    <div class="col-12 col-md-4">
-      <div class="grid-item square">
-        <div class="content">
-          <h3 class="text-start large-square5">What are the <br />documents <br />needed to be a<br />buyer in <br />Cardamom <br />Auction.com?</h3>
-         <i class="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
+    <div className="col-12 col-md-4">
+      <div className="grid-item square">
+        <div className="content">
+          <h3 className="text-start large-square5">What are the <br />documents <br />needed to be a<br />buyer in <br />Cardamom <br />Auction.com?</h3>
+         <i className="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
         </div>
 
       </div>
     </div>
-    <div class="col-12 col-md-4">
-      <div class="grid-item square">
-        <div class="content">
-          <h3 class="text-start large-square6">What are the <br />cardamom <br />qualities available <br />in wholesale and <br />retail manner?</h3>
-         <i class="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
+    <div className="col-12 col-md-4">
+      <div className="grid-item square">
+        <div className="content">
+          <h3 className="text-start large-square6">What are the <br />cardamom <br />qualities available <br />in wholesale and <br />retail manner?</h3>
+         <i className="fas fa-chevron-right read-more-small" id="readMoreBtn5"></i>
         </div>
 
       </div>
@@ -278,7 +301,10 @@ export default function Faq() {
 
 
   </div>
+  <Footer/>
  
  </div>
+ 
+
     );
 }

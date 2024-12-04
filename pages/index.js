@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
 
@@ -53,20 +54,72 @@ return(
  
 </section>
 
-<section id="auction-scroll" class="online-auction py-5">
-        <div class="container mx-lg-5 px-lg-5">
-          <div class="row align-items-center flex-row-reverse">
-            <div class="col-12">
+<section
+        className="scroll-buttons chero-section d-flex align-items-center position-relative overflow-hidden"
+        style={{ backgroundColor: '#414042' }}
+      >
+        <div className="container">
+          <div className="row justify-content-around my-5">
+            <div className="col text-center">
+              <img
+                className="scroll-img"
+                src="./img/online-auction.svg"
+                alt="Online Auction"
+              />
+              <p className="mt-2">ONLINE AUCTIONS</p>
+              <a href="#auction-scroll"
+                ><img
+                  className="scroll-logo"
+                  src="./img/scroll-down-button.svg"
+                  alt="Scroll Down"
+                />
+              </a>
+            </div>
+            <div className="col text-center">
+              <img
+                className="scroll-img"
+                src="./img/wholesale.svg"
+                alt="Wholesale"
+              />
+              <p className="mt-2">WHOLESALE</p>
+              <a href="#wholesale-scroll">
+                <img
+                  className="scroll-logo"
+                  src="./img/scroll-down-button.svg"
+                  alt="Scroll Down"
+                />
+              </a>
+            </div>
+
+            <div className="col text-center">
+              <img className="scroll-img" src="./img/retail.svg" alt="Retail" />
+              <p className="mt-2">RETAIL</p>
+              <a href="#retail-scroll">
+                <img
+                  className="scroll-logo"
+                  src="./img/scroll-down-button.svg"
+                  alt="Scroll Down"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<section id="auction-scroll" className="online-auction py-5">
+        <div className="container mx-lg-5 px-lg-5">
+          <div className="row align-items-center flex-row-reverse">
+            <div className="col-12">
               <h1
-                class="auction-heading text-center mb-4"
-                style={{ color: '#414042', fontSize: '35px', fontWeight: 600 }}
+                className="auction-heading text-center mb-4"
+                style={{ color: '#414042', fontSize: '35px', fontWeight: '600' }}
               >
                 ONLINE AUCTION
               </h1>
             </div>
 
             <div
-              class="col col-lg order-md-1 auction-img order-lg-2 text-center me-sm-0 pe-sm-0 mb-4"
+              className="col col-lg order-md-1 auction-img order-lg-2 text-center me-sm-0 pe-sm-0 mb-4"
             >
               <a href="">
                 <img
@@ -77,8 +130,8 @@ return(
               </a>
             </div>
 
-            <div class="col-lg-8 order-md-1 ps-lg-5">
-              <p class="auction__text text-justify line lh-base">
+            <div className="col-lg-8 order-md-1 ps-lg-5">
+              <p className="auction__text text-justify line lh-base">
                 Auctions are conducted every Wednesday and Saturday 9.30 am
                 onwards. To perform auctions we introduced a user friendly app
                 -CARDAMOM AUCTION.COM, which is available in ios app store &
@@ -91,26 +144,26 @@ return(
               </p>
 
               <div
-                class="d-flex justify-content-center justify-content-md-start mt-4"
+                className="d-flex justify-content-center justify-content-md-start mt-4"
               >
-                <button id="see-more" class="custom-see-more">See More</button>
+                <button id="see-more" className="custom-see-more">See More</button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="Buy-page" class="buy-sell-section">
+      <section id="Buy-page" className="buy-sell-section">
         
 
-        <div class="container mb-md-3 mx-lg-5 px-lg-5">
-          <div class="row buy-sell-row mt-2">
-            <div class="col-md-6 order-md-2 align-content-md-end buy-text">
+        <div className="container mb-md-3 mx-lg-5 px-lg-5">
+          <div className="row buy-sell-row mt-2">
+            <div className="col-md-6 order-md-2 align-content-md-end buy-text">
               <div>
-                <h1 class="text-center fw-bold text-md-start">
-                  <span class="buy-head">BUYING</span>
+                <h1 className="text-center fw-bold text-md-start">
+                  <span className="buy-head">BUYING</span>
                 </h1>
-                <p class="text-justify line lh-base buy-p">
+                <p className="text-justify line lh-base buy-p">
                   You get maximum 1.5 minute to negotiate with a lot. There is
                   an auto bid button in each lot number to place your bid and
                   have an option to increase up to RS 100 from the current rate.
@@ -118,23 +171,23 @@ return(
               </div>
             </div>
 
-            <div class="col-md-6 order-md-1 buy-img" style={{height: '300px'}}>
-              <div class="row buy-row1"></div>
-              <div class="row buy-row2">
-                <div class="circle-wrapper">
-                  <div class="circle-buy">
+            <div className="col-md-6 order-md-1 buy-img" style={{height: '300px'}}>
+              <div className="row buy-row1"></div>
+              <div className="row buy-row2">
+                <div className="circle-wrapper">
+                  <div className="circle-buy">
                     <img src="img/buying.png" id="buying-img" alt="" />
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-6 sell-text order-md-3 align-content-md-start">
+            <div className="col-md-6 sell-text order-md-3 align-content-md-start">
               <div>
-                <h1 class="text-center fw-bold text-md-start mt-4 mt-md-0">
-                  <span class="buy-head">SELLING</span>
+                <h1 className="text-center fw-bold text-md-start mt-4 mt-md-0">
+                  <span className="buy-head">SELLING</span>
                 </h1>
-                <p class="text-justify line lh-base">
+                <p className="text-justify line lh-base">
                   We gather a number of traders in a single, transparent
                   platform to perform cardamom trading rather than going to many
                   shops to buy/sell cardamom. It provides an opportunity to see
@@ -361,19 +414,22 @@ return(
         </div>
         </section>
 
-        <section class="map" style="background-color: #f4fffb">
-      <div class="map_container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.4662906236404!2d77.15322727402183!3d9.72651087768298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07aa365da2caed%3A0xbc209b8c60f19ed5!2sState%20Ware%20House!5e0!3m2!1sen!2sin!4v1732457869699!5m2!1sen!2sin"
-          width="100%"
-          height="400"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <section className="map" style={{ backgroundColor: '#f4fffb' }}>
+      <div className="map_container">
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.4662906236404!2d77.15322727402183!3d9.72651087768298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07aa365da2caed%3A0xbc209b8c60f19ed5!2sState%20Ware%20House!5e0!3m2!1sen!2sin!4v1732457869699!5m2!1sen!2sin"
+      width="100%"
+      height="400"
+      style={{ border: 0 }}
+      allowFullScreen={true}
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
       </div>
     </section>
+    <Footer/>
+
+    
 
 
 
