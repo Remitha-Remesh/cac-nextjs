@@ -1,16 +1,52 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import Swipper from '../components/swipper';
+
 
 
 export default function home(){
 
+  const images1 = [
+    "/img/Thumbnail Image 1.png",
+    "/img/Thumbnail Image 2.png",
+    "/img/Thumbnail Image 3.png",
+    "/img/Thumbnail Image 4.png",
+    "/img/Thumbnail Image 1.png",
+    "/img/Thumbnail Image 2.png",
+    "/img/Thumbnail Image 3.png",
+    "/img/Thumbnail Image 4.png",
+  ];
+  
+
+  const images2 = [
+    "/img/Thumbnail Image 1-retail.png",
+    "/img/Thumbnail Image 2-retail.png",
+    "/img/Thumbnail Image 3-retail.png",
+    "/img/Thumbnail Image 4-retail.png",
+    "/img/Thumbnail Image 1-retail.png",
+    "/img/Thumbnail Image 2-retail.png",
+    "/img/Thumbnail Image 3-retail.png",
+    "/img/Thumbnail Image 4-retail.png",
+  ];
+  
+
+
 return(
 
+  
+      
+ 
+  
+
 <div>
+
+    
 <Navbar/>
+
+
   <section
   id="download-sec"
-  className="hero-section d-flex align-items-center position-relative overflow-hidden text-white"
+  className="hero-home-section d-flex align-items-center position-relative overflow-hidden text-white"
 >
   <div className="container d-flex flex-column custom-gap text-start">
     <div className="row">
@@ -199,11 +235,11 @@ return(
               </div>
             </div>
 
-            <div class="col-md-6 sell-img order-md-4" style={{height: '300px' }}>
-              <div class="row h-50" style={{ backgroundColor: '#39b54a' }}></div>
-              <div class="row h-50">
-                <div class="circle-wrapper">
-                  <div class="circle-sell">
+            <div className="col-md-6 sell-img order-md-4" style={{height: '300px' }}>
+              <div className="row h-50" style={{ backgroundColor: '#39b54a' }}></div>
+              <div className="row h-50">
+                <div className="circle-wrapper">
+                  <div className="circle-sell">
                     <img src="img/selling.png" id="selling-img" alt="" />
                   </div>
                 </div>
@@ -276,76 +312,10 @@ return(
             </div>
           </div>
         </div>
-        {/* <div class="container pb-5 mt-3">
-          <div id="slider1" class="slider-container swiper">
-            <div class="slider-content">
-              <div class="card-wrapper swiper-wrapper">
-                <div class="card1 swiper-slide">
-                  <div class="d-flex justify-content-center">
-                    <img src="./img/Thumbnail Image 1.png" alt="" />
-                  </div>
-                </div>
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="./img/Thumbnail Image 2.png" alt="" />
-                    </div>
-                  </div>
-                </div>
+         <div class="container pb-5 mt-3">
+         <Swipper images={images1} />
 
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="./img/Thumbnail Image 3.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="./img/Thumbnail Image 4.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="d-flex justify-content-center">
-                    <img src="./img/Thumbnail Image 1.png" alt="" />
-                  </div>
-                </div>
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="./img/Thumbnail Image 2.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="./img/Thumbnail Image 3.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="./img/Thumbnail Image 4.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn "></div>
-          </div>
-
-        </div> */}
+        </div> 
       </section>
 
       <section id="retail-scroll" className="retail">
@@ -412,6 +382,10 @@ return(
             </div>
           </div>
         </div>
+        <div class="container pb-5 mt-3">
+         <Swipper images={images2} />
+
+        </div> 
         </section>
 
         <section className="map" style={{ backgroundColor: '#f4fffb' }}>
@@ -429,9 +403,7 @@ return(
     </section>
     <Footer/>
 
-    
-
-
+  
 
 </div>
 );

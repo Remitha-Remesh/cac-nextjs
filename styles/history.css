@@ -16,12 +16,15 @@ body {
   .hero-text {
     font-size: 2.5rem !important;
   }
-  
+
+
   @media (min-width: 766px) and (max-width: 988px) {
     .hero-text {
       font-size: 2.1rem !important;
     }
   }
+  
+
   
   
   .history-head{

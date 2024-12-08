@@ -1,5 +1,9 @@
-import Link from "next/link";
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+
+
 const Navbar = () => {
+  const router = useRouter(); 
   return (
   <navbar>
 
@@ -24,28 +28,28 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <div className="ms-auto d-flex justify-content-center">
-            <ul className="navbar-nav mb-2 mb-lg-0">
-              <li className="nav-item mx-2">
-                <Link href="/">
-                  <span className="nav-link ms-3">HOME</span>
-                </Link>
-              </li>
-              <li className="nav-item mx-2">
-                <Link href="/history">
-                  <span className="nav-link ms-2">HISTORY</span>
-                </Link>
-              </li>
-              <li className="nav-item mx-2">
-                <Link href="/contact">
-                  <span className="nav-link ms-2">CONTACT</span>
-                </Link>
-              </li>
-              <li className="nav-item mx-2">
-                <Link href="/faq">
-                  <span className="nav-link ms-4">FAQ</span>
-                </Link>
-              </li>
-            </ul>
+          <ul className="navbar-nav mb-2 mb-lg-0">
+      <li className="nav-item mx-2">
+        <Link href="/" className={`nav-link ms-3 ${router.pathname === "/" ? "active" : ""}`}>
+          HOME
+        </Link>
+      </li>
+      <li className="nav-item mx-2">
+        <Link href="/history" className={`nav-link ms-2 ${router.pathname === "/history" ? "active" : ""}`}>
+          HISTORY
+        </Link>
+      </li>
+      <li className="nav-item mx-2">
+        <Link href="/contact" className={`nav-link ms-2 ${router.pathname === "/contact" ? "active" : ""}`}>
+          CONTACT
+        </Link>
+      </li>
+      <li className="nav-item mx-2">
+        <Link href="/faq" className={`nav-link ms-4 ${router.pathname === "/faq" ? "active" : ""}`}>
+          FAQ
+        </Link>
+      </li>
+    </ul>
           </div>
           <div className="d-flex justify-content-center align-items-center mt-3 mb-lg-1 mt-lg-0 me-lg-5 pe-lg-5">
             <a className="mx-3" href="#">
